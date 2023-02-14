@@ -87,10 +87,6 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     flex-wrap: wrap;
 }
 
-.menu__item {
-
-}
-
 .menu__item:not(:last-child) {
     margin: 0 21px 0 0; 
 }
@@ -99,6 +95,12 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     color: #737373;
     line-height: 171%;
     font-weight: 600;
+}
+
+@media screen and (max-width:992px){
+    .menu__link {
+        color: #363333;
+    }
 }
 
 @media screen and (max-width:479px){
@@ -113,6 +115,14 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     flex: 1 1 auto;
 }
 
+.page__main-block {
+
+}
+
+.page__services {
+
+}
+
 /*----------Подвал----------*/
 
 .footer {
@@ -123,10 +133,6 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
 
 .main-block {
     position: relative;
-}
-
-.main-block__container {
-
 }
 
 .main-block__body > *:not(:last-child) {
@@ -140,11 +146,23 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     max-width: 401px;
 }
 
+@media screen and (max-width:992px){
+    .main-block__body {
+        padding: 120px 0 191px 0;
+    }
+}
+
 .main-block__title {
     font-size: 58px;
     line-height: calc(80/58 * 100%);
     font-weight: 800;
     letter-spacing: 0.2px;
+}
+
+@media screen and (max-width:479px){
+    .main-block__title {
+        font-size: 42px;
+    }
 }
 
 .main-block__text {
@@ -153,8 +171,16 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     font-size: 20px;
 }
 
+@media screen and (max-width:992px){
+    .main-block__text {
+        color: #363333;
+    }
+}
+
 .main-block__buttons {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0;
 }
 
 .main-block__button {
@@ -170,14 +196,27 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     font-weight:700;
     line-height: 150%;
     text-align: center;
+    margin: 10px 0;
+}
+
+@media screen and (min-width:479px){
+    .main-block__button:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 .main-block__button_border {
     background: transparent;
     color: #0D5C63;
     border: 1px solid #0D5C63;
-    margin-left: 10px;
 }
+
+@media screen and (max-width:479px){
+    .main-block__button {
+        flex: 1 1 auto;
+    }
+}
+
 .main-block__image {
     position: absolute;
     top:0;
@@ -185,3 +224,59 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     width:100%;
     height:100%;
 }
+
+@media screen and (max-width:992px){
+    .main-block__image {
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .main-block__image img{
+        object-position: right;
+    }
+}
+
+/*----------Services----------*/
+
+.services { 
+
+} 
+
+.services__container { 
+
+} 
+
+._container { 
+
+} 
+
+.services__body { 
+    display: flex;
+    margin: 0 -15px;
+} 
+
+.services__column { 
+    padding: 0 15px;
+    flex: 0 1
+} 
+
+.services__item-services { 
+
+} 
+
+.item-service { 
+
+} 
+
+.item-service__icon { 
+
+} 
+
+.item-service__title { 
+
+} 
+
+.item-service__text { 
+
+} 
