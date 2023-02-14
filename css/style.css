@@ -120,7 +120,9 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
 }
 
 .page__services {
-
+    margin: -111px 0 0 0;
+    position: relative;
+    z-index: 100;
 }
 
 /*----------Подвал----------*/
@@ -258,25 +260,62 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
 
 .services__column { 
     padding: 0 15px;
-    flex: 0 1
+    flex: 0 1 33.333%;
 } 
 
-.services__item-services { 
-
+.services__item-service { 
+    background: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    padding: 35px;
+    transition: 300ms;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
 } 
+
+.services__item-service:hover{ 
+    background-color: #0D5C63;
+    color: white;
+} 
+
+.services__item-service:hover .item-service__text {
+    color: white;
+}
 
 .item-service { 
-
+    display: block;
+    color: #252B42;
 } 
+
+.item-service>*:not(:last-child) {
+    margin: 0 0 10px 0;
+}
 
 .item-service__icon { 
 
 } 
 
-.item-service__title { 
+.item-service__icon_white { 
+    display: none;
+} 
 
+.services__item-service:hover .item-service__icon_white {
+    display: block;
+}
+
+.services__item-service:hover .item-service__icon_green {
+    display: none;
+}
+
+.item-service__title { 
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: 0.1;
 } 
 
 .item-service__text { 
-
+    color: #737373;
+    line-height: 142%;
+    max-width: 217px;
 } 
