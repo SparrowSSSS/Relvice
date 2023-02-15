@@ -5,7 +5,7 @@ a {text-decoration: none;}
 ul, ol, li {list-style: none;}
 img {vertical-align: top;}
 h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
-html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-family: Montserrat; font-weight: 500;}
+html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-family: Montserrat; font-weight: 500; user-select: none;}
 .wrapper {min-height: 100%; overflow: hidden; display: flex; flex-direction: column;}
 
 ._container {
@@ -256,12 +256,26 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
 .services__body { 
     display: flex;
     margin: 0 -15px;
+    flex-wrap: wrap;
+    justify-content: center;
 } 
 
 .services__column { 
     padding: 0 15px;
-    flex: 0 1 33.333%;
+    flex: 1 1 30%;
 } 
+
+@media screen and (max-width:900px){
+    .services__column:last-child { 
+        margin-top: 20px;
+    } 
+}
+
+@media screen and (max-width:540px){
+    .services__column:nth-child(2) { 
+        margin-top: 20px;
+    } 
+}
 
 .services__item-service { 
     background: #FFFFFF;
@@ -319,3 +333,5 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     line-height: 142%;
     max-width: 217px;
 } 
+
+
