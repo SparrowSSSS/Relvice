@@ -374,12 +374,6 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     flex: 0 1 22.2%;
 }
 
-@media screen and (max-width:1072px){
-    .advantages__column {
-        flex: 0 1 47.1%;
-    }
-}
-
 .advantages__item:not(:last-child) {
     margin: 0 0 10px 0;
 }
@@ -389,6 +383,16 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     background-color: white;
     text-align: center;
     font-weight: 700;
+}
+
+@media screen and (max-width:1076px){
+    .advantages__column {
+        flex: 0 1 47.1%;
+    }
+
+    .advantages__item {
+        background-color: #FAFAFA;
+    }
 }
 
 .advantages__icon {
