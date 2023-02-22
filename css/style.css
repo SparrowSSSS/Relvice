@@ -3,7 +3,7 @@
 *, *::before, *::after {padding: 0; margin: 0; border: 0; box-sizing:0;}
 a {text-decoration: none;}
 ul, ol, li {list-style: none;}
-img {vertical-align: top;}
+img {vertical-align: top; user-select: none;}
 h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
 html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-family: Montserrat; font-weight: 500; background: #FAFAFA;}
 .wrapper {min-height: 100%; overflow: hidden; display: flex; flex-direction: column;}
@@ -227,6 +227,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     margin: 10px 0;
     transition: 300ms;
     border: 1px solid #FF7B47;
+    user-select: none;
 }
 
 .main-block__button:hover {
@@ -806,6 +807,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     padding: 20px;
     cursor: pointer;
     transition: 300ms;
+    user-select: none;
 }
 
 .subscribe__button:hover {
@@ -898,6 +900,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     font-weight: 600;
     padding: 5px 20px;
     transition: 300ms;
+    user-select: none;
 }
 
 .item-getintouch:hover {
@@ -991,6 +994,7 @@ html, body {height: 100%; line-height: 1; font-size: 14px; color: #252B42; font-
     font-size: 14px;
     line-height: calc(28px/14px*100%);
     transition: 300ms;
+    user-select: none;
 }
 
 .contact__button:hover {
